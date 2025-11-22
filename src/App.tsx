@@ -1,8 +1,10 @@
 import './App.css'
-import { Box, Flex, Text, Image, Heading, Icon, AbsoluteCenter } from '@chakra-ui/react'
-import { GoArrowUpRight, GoRead  } from 'react-icons/go'
+import { Box, Flex, Text, Image, Heading, Icon } from '@chakra-ui/react'
+import {  GoRead  } from 'react-icons/go'
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import data from './assets/data.json'
 import pic from './assets/pic.jpeg'
+import ListItem from './components/ListItem';
 
 function App() {
 
@@ -35,23 +37,17 @@ function App() {
               I approach every challenge with integrity, collaboration, and a commitment to continuous improvement.
             </Text>
           </Box>
-          <Flex id="work" direction="column">
+          <Box id="work">
             <Heading size="2xl" paddingBottom="8">
               Work
             </Heading>
-            <Flex id="work">
-              <Flex direction="row" gap="2" align="center"> 
-                <Text paddingRight="20" textStyle="sm">October 2024 - Present</Text>
-                <Flex>
-                  <Text textStyle="md">Customer Representative at Finish Line</Text>
-                  <Icon paddingLeft="2">
-                    <a href="https://www.finishlinept.com"><GoArrowUpRight /></a>
-                  </Icon>
-                </Flex>
-              </Flex>
+            <Flex id="list" direction="column">
+              {data.map((x, index) => {
+                  return <ListItem key={index} title={x.title} dates={x.dates} company={x.company} link={x.link} location={x.location} />
+                })
+              }
             </Flex>
-
-          </Flex>
+          </Box>
         </Box>
         <Box id="footer">
             <Flex id='contact' gap="4" justify="center">
