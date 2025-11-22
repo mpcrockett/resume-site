@@ -30,11 +30,9 @@ function App() {
         <Box id="body" p="4">
           <Box id="intro" paddingBottom="8">
             <Text>
-              Engineering professional seeking a challenging Solutions Engineering role where I
-              can apply my technical knowledge, strong communication, and creative problem-solving skills.
-              Drawing on a proven background in non-profit leadership, strategic operations, and back-end software engineering,
-              I bring a unique blend of technical aptitude, emotional intelligence, and meticulous attention to detail.
-              I approach every challenge with integrity, collaboration, and a commitment to continuous improvement.
+              Approachable engineer who loves working with people — combining
+               technical skill with clear communication, empathy,
+                and collaboration to help clients solve problems and move their work forward.
             </Text>
           </Box>
           <Box id="work">
