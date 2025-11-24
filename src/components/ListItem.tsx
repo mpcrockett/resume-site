@@ -11,9 +11,9 @@ interface Props {
 
 export default function ListItem(props: Props) {
   return (
-    <Flex direction="row" gap="2" align="center" paddingBottom="5">
-      <Text paddingRight="20" textStyle="sm" w="1/3">{props.dates}</Text>
-      <Flex justifyContent="flex-start" w="2/3">
+    <Flex id="listItem" direction="row" gap="2" align="center" paddingBottom="5">
+      <Text id="date" paddingRight="20" textStyle="sm" w="1/3">{props.dates}</Text>
+      <Flex justifyContent="flex-start" w="2/3" id="title">
         <Text textStyle="lg">{props.title}</Text>
         <Icon paddingLeft="2">
           <a href={props.link}><GoArrowUpRight /></a>

@@ -17,6 +17,27 @@
   padding-bottom: 4;
 }
 
+@media (max-width: 500px) {
+  #list {
+    border: 2px solid blue;
+  }
+
+  #listItem { 
+    flex-direction: column;
+  }
+
+  #title {
+    width: 100%
+  }
+
+  #date {
+    font-size: x-small;
+    text-wrap: wrap;
+    width: 100%;
+  }
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

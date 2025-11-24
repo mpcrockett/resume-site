@@ -17,7 +17,7 @@ function App() {
               src={pic}
               boxSize="135px"
               borderRadius="full"
-              fit="fill"
+              fit="cover"
               alt="Melissa Crockett"
               p="4"
             />
